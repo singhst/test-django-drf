@@ -4,9 +4,9 @@ Demo of RESTful API using Django Rest Framework (DRF) by the self oversea MSc st
 
 Perfrom CRUD in 
 
-(1) SQLite
+    1. SQLite
 
-(2) MongoDB
+    2. MongoDB
 
 
 # Setup virtual environment `venv`
