@@ -19,3 +19,6 @@ Perfrom CRUD in
 2. `source venv/bin/activate`
 3. `cd sqlite-drf/study_info/study_info`
 4. `python manager.py runserver`
+
+## Export pip list
+`pip freeze > requirements.txt`
