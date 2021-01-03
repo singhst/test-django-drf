@@ -39,6 +39,14 @@ class StudyViewSet(viewsets.ModelViewSet):
 
     # === (2) Executing custom SQL directly ==============
     # /api_v2/study/{pk}/sql_cursor_update/
+    """ 
+    e.g. Update the `id=2701` row & `Country column` to "test". 
+    Request method: PUT 
+    URL:            http://127.0.0.1:8000/api_v2/study/2701/sql_cursor_update/
+    Body JSON:      {
+                        "Country": "sql_put"
+                    }
+    """
     @action(methods=['put'], detail=True)
     def sql_cursor_update(self, request, pk=None):
         country = request.data.get('Country', None)
